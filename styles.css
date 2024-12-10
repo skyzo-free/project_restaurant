@@ -69,7 +69,7 @@ body {
 /*_______________________*/
 /*header section*/
 #header{
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100vw;
     height: 70px;
@@ -154,7 +154,7 @@ body {
     flex: 1;
 }
 #menu_col h2{
-    background-color: red;
+    background-color: rgb(143, 106, 32);
     color: #fff;
     text-align: center;
     padding: 5px;
@@ -243,9 +243,88 @@ body {
 }
 
 
-
-
-
+/*Contact Section*/
+#contact{
+    padding: 25px 0 25px 0;
+}
+#contact_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px 0 100px;
+    flex-wrap: wrap;
+}
+.contact_col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.contact_col p, h3{
+    font-weight: bold;
+    color: #292929;
+    margin: 10px;
+}
+.contact_col p a{
+    text-decoration: none;
+    color: #292929;
+}
+#social a{
+    color: rgb(195, 139, 35);
+    margin: 3px;
+}
+.contact_col form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(106, 104, 92);
+    width: 70%;
+    padding: 20px 40px 20px 20px;
+}
+.contact_col form h2{
+    text-align: center;
+    font-family: cursive;
+}
+.contact_col form input{
+    width: 100%;
+    height: 17pt;
+    padding: 5px;
+    margin: 5px;
+}
+.contact_col form textarea{
+    width: 100%;
+    padding: 5px;
+}
+.contact_col form button{
+    margin: auto;
+    padding: 10px;
+    color: #fff;
+    background-color: orange;
+    border: 1px solid orange;
+    cursor: pointer;
+}
+/*footer section*/
+#footer{
+    background-color: #292929;
+    padding: 20px;
+    position: relative;
+}
+#footer h5{
+    text-align: center;
+    color: orange;
+}
+#footer h5 a{
+    color: #fff;
+    text-decoration: none;
+}
+#top{
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+}
+#top a{
+    color: #fff;
+    font-size: 1.2rem;
+}
 
 @media screen and (max-width : 768px)  {
     #header{
@@ -261,7 +340,7 @@ body {
         font-size: 95%;
 
     }
-    #menu_row{
+    #menu_row, #about_row, #contact_row{
         flex-wrap: wrap;
         padding: 0 10px 0 10px;
     }
@@ -269,5 +348,9 @@ body {
 @media screen and (max-width : 360px){
     html{
         font-size: 70%;
+    }
+    #about_img{
+        width: 220px;
+        height: 220px;
     }
 }
